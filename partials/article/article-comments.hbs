@@ -1,23 +1,8 @@
 {{#if comments}}
 <div class="py-8 post-comments bg-gray-150">
     <div class="max-w-3xl px-4 mx-auto">
-        {{comments title=(t "Discussion")}}
+        {{!-- {{comments title=(t "Discussion")}} --}}
         <div id='discourse-comments'></div>
-
-<script type="text/javascript">
-    if (window.location.pathname.indexOf('/p/') < 0) {
-        DiscourseEmbed = {
-            discourseUrl: 'http://community.wartner.io/',
-            discourseEmbedUrl: '{{url absolute="true"}}'
-        };
-
-        (function() {
-            var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-            d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-        })();
-    }
-</script>
     </div>
 </div>
 {{/if}}
